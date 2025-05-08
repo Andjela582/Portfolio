@@ -8,13 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    overflow-x: hidden;
-  }
-
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -44,7 +37,7 @@ html:root {
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 #div-h1 {
@@ -89,8 +82,8 @@ a:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 80vh;
-    padding: 6rem 2rem 2rem 2rem; /* dodato 6rem gore zbog headera */
     gap: 2rem;
+    
 }
 
 
