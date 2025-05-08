@@ -18,7 +18,7 @@ html {
 html:root {
     --nav-font:"Rubik Doodle Shadow", system-ui;
     --default-font:"Figtree", sans-serif;
-    --font-size-def: 3rem;
+    --font-size-def: 1rem;
 }
 
 /* Colors */
