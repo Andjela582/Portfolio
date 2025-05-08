@@ -18,7 +18,8 @@ html {
 html:root {
     --nav-font:"Rubik Doodle Shadow", system-ui;
     --default-font:"Figtree", sans-serif;
-    --font-size-def: 1rem;
+    --font-size-def: 3rem;
+    --font-size-h: 5rem;
 }
 
 /* Colors */
@@ -48,10 +49,11 @@ html:root {
     justify-content: space-between;
     font-family: var(--nav-font);
     font-weight: 400;
+    font-size: large;
 }
 
 .social-icon {
-    font-size: 2rem;
+    font-size: var(--font-size-h)
 }
 
 .navmenu ul {
@@ -82,7 +84,6 @@ a:hover {
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 100vh;
-    gap: 2rem;
 }
 
 
@@ -103,8 +104,8 @@ a:hover {
 
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     max-width: 100%;
@@ -116,6 +117,7 @@ img {
     font-family: var(--default-font);
     margin-bottom: 0.5rem;
     align-self: center;
+    font-size: var(--font-size-h);
 }
 
 .animation-text {
@@ -144,6 +146,7 @@ img {
     text-align: center;
     text-shadow: 0 0 5px rgb(11, 57, 184), 0 0 10px rgb(0, 140, 255), 0 0 20px rgb(0, 60, 255);
     animation: pullsing 2s infinite alternate;
+    font-size: var(--font-size-h);
 }
 
 @keyframes pullsing {
@@ -170,7 +173,7 @@ img {
 
 .aboutme-info p {
     color: var(--link-color);
-    font-size: var(--font-size-def);
+    font-size: 2rem;
     text-align: center;
     font-family: var(--default-font);
 }
@@ -203,7 +206,7 @@ img {
     font-family: var(--default-font);
     color: var(--heading-color);
     padding: 2rem;
-    font-size: 20px;
+    font-size: 4rem;
 }
 
 .div-grid {
@@ -224,7 +227,7 @@ img {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 2rem;
     box-sizing: border-box;
     transition: border 0.3s ;
 }
@@ -245,6 +248,7 @@ img {
     transition: border 0.3s ;
     border-radius: 5px;
     width: 50%;
+    font-size: 2rem;
 }
 
 .left-side button {
@@ -267,6 +271,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 2rem;
 }
 
 .right-side p:not(:last-child){
@@ -308,54 +313,64 @@ span {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 55%;
+    }
 
-@media screen and (max-width: 768px) {
     .main-section {
         flex-direction: column;
         height: auto;
         padding: 2rem 1rem;
-        text-align: center;
+        margin-top: 10rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+  
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        margin-top: 10rem;
     }
   
     .img-div img {
-        margin-top: 3rem;
         width: 100px;
         height: 100px;
     }
   
+    .text-div {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+  
     .about-article {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+        padding: 1rem;
     }
   
     .aboutme-info {
-        padding: 2rem 0;
-    }
-  
-    .zoom-image {
-        width: 40%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 2rem;
     }
 
-    .project-image img {
-        display: block;
-        margin: 0 auto;
-        max-width: 60%;
-        height: auto;
-    }
-  
-    .div-grid {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 2rem;
+    .project-image {
+        width: 600px;
+        height: 600px;
     }
   
     .left-side textarea {
         width: 60%;
+    }
+  
+    .div-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
     
