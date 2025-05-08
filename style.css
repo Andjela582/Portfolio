@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow-x: hidden;
+  }
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -77,29 +84,37 @@ a:hover {
 
 .main-section {
     background-image: linear-gradient(-45deg, var(--main-color), white);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     height: 80vh;
-    padding: 2rem;
+    padding: 6rem 2rem 2rem 2rem; /* dodato 6rem gore zbog headera */
+    gap: 2rem;
 }
 
 
 .img-div {
-    grid-row: 1;
-    padding-left: 20%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .text-div {
-    grid-row: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 
 img {
     width: 200px;
     height: 200px;
-    border-radius: 80%;
+    border-radius: 50%;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .text-div h2 {
