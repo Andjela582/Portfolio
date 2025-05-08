@@ -13,6 +13,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Fonts */
 html:root {
     --nav-font:"Rubik Doodle Shadow", system-ui;
@@ -76,17 +81,19 @@ a:hover {
 
 .main-section {
     background-image: linear-gradient(-45deg, var(--main-color), white);
-    padding: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 
 .img-div {
     grid-column: 1;
-    padding-left: 20rem;
+    padding-left: 5%;
 }
 
 
