@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/project-card.css">
+    <title>Portfolio-Andjela Dragovic</title>
+</head>
+<body>
+    <header class="header-main">
+        <div id="div-h1">
+            <h1>ANĐELA</h1>
+            <div class="social-icon">
+                <a class="social-icon" href="https://www.linkedin.com/in/andjela-dragovic-048b50142/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <nav class="navmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section  class="main-section">
+            <div class="img-div">
+                <img src="Photos/Main Photo.JPG" alt="Main-Photo" class="full-image">
+            </div>
+            <div class="text-div">
+                <h2>Anđela Dragović</h2>
+                <p class="animation-text">Hello, I am passionate web developer from Belgrade</p>
+            </div>
+        </section>
+        <section id="about">
+            <h3>About me</h3>
+            <article class="about-article">
+                <div class="aboutme-info">
+                    <p>Hey there! I am a frontend developer who enjoys solving design puzzles with code. I love turning designs into functional, accessible web experiences using HTML, CSS, SCCS and lately also learning JavaScript. I am a curious mind who loves learning new tools.  </p>
+                    <a href="Additional items/ANĐELA DRAGOVIĆ.pdf" download class="btn-cv">Download my CV</a>
+                </div>
+                <div class="zoom-image">
+                    <img src="Photos/IMG_1966.jpeg" alt="Second-photo">
+                </div>
+            </article>
+        </section>
+        <section id="project">
+            <div class="project-card">
+              <div class="project-text">
+                <h3 class="project-title">Portfolio site: My personal presentation</h3>
+                <p class="project-description">
+                  This site is my first big project as a beginner on course for frontend development at Comtrade Academy. It's created so that I can present myself, my knowledge, and skills that I am learning at the moment and project that I am planning to finish.
+                </p>
+                <ul class="project-info">
+                  <li><strong>Technologies:</strong> HTML, CSS, SASS, in planning: JavaScript</li>
+                  <li><strong>Status:</strong> Working on it</li>
+                  <li><strong>Planning to improve:</strong> With JavaScript and to host it in GitHub</li>
+                </ul>
+              </div>
+              <div class="project-image">
+                <img src="Photos/Snimak ekrana 2025-05-03 130516.png" alt="Portfolio Screenshot">
+              </div>
+            </div>
+          </section>
+        <section id="contact">
+            <h3>Contact me</h3>
+            <div class="div-grid">
+                <div>
+                    <form action="/formdata" class="left-side">
+                        <section>
+                            <label for="name_field"></label>
+                            <input type="text" id="name_field" required placeholder="Your name">
+                        </section>
+                        <section>
+                            <label for="email_field"></label>
+                            <input type="email" name="Email" id="email_field" required placeholder="Email">
+                        </section>
+                        <section>
+                            <label for="message_field"></label>
+                            <textarea name="Message" id="message_field" required placeholder="Your Message"></textarea>
+                        </section>
+                        <button>Send message</button>
+                    </form>
+                </div>
+                <div class="right-side">
+                    <p id="myemail">Email: andjaaranitovic@gmail.com</p>
+                    <p id="myphone">Phone: +381 694448796</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p> &copy; <span>Anđela</span> All Rights Reserved </p>
+            <p>Made with <span>HTML/CSS/SASS</span></p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
