@@ -13,10 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 /* Fonts */
 html:root {
