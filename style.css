@@ -13,6 +13,15 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    padding-top: 100px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
 /* Fonts */
 html:root {
@@ -38,28 +47,38 @@ html:root {
     left: 0;
     width: 100%;
     opacity: 0.85;
+    z-index: 1000;
 }
+
+.header-main .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+
 
 #div-h1 {
     color:  var(--heading-color);
-    padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
     font-family: var(--nav-font);
     font-weight: 400;
-    font-style: normal;
 }
 
 .social-icon {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .navmenu ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
-    font-weight: bolder;
-    margin-bottom: 0.5rem;
+    gap: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -81,9 +100,8 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 100vh;
     gap: 2rem;
-    
 }
 
 
