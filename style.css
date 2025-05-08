@@ -85,8 +85,6 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 80vh;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 2rem;
 }
 
@@ -98,8 +96,8 @@ a:hover {
 
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 80%;
     object-fit: cover;
 }
