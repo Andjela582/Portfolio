@@ -256,7 +256,7 @@ img {
     background-color: white;
     color: var(--link-color);
     border: 1px solid var(--link-color);
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -281,8 +281,8 @@ img {
 #myemail::before{
     content: "";
     display: inline-block;
-    width: 30px;
-    height:30px;
+    width: 50px;
+    height:50px;
     background-image: url(https://img.icons8.com/?size=100&id=108806&format=png&color=000000);
     background-size: contain;
     margin-right: 2rem;
@@ -292,8 +292,8 @@ img {
 #myphone::before{
     content: "";
     display: inline-block;
-    width: 30px;
-    height:30px;
+    width: 50px;
+    height:50px;
     background-image: url(https://img.icons8.com/?size=100&id=108638&format=png&color=000000);
     background-size: contain;
     margin-right: 2rem;
@@ -305,7 +305,7 @@ footer div {
     padding: 1.5rem;
     text-align: center;
     color: var(--heading-color);
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
 
 span {
@@ -321,14 +321,15 @@ span {
     .main-section {
         flex-direction: column;
         height: auto;
-        padding: 2rem 1rem;
-        margin-top: 10rem;
+        padding-top: 2rem;
+        position: relative;
+        top: 11rem;
     }
 
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     html {
         font-size: 55%;
     }
@@ -336,8 +337,9 @@ span {
     .main-section {
         flex-direction: column;
         height: auto;
-        padding: 2rem 1rem;
-        margin-top: 10rem;
+        padding-top: 2rem;
+        position: relative;
+        top: 11rem;
     }
   
     .img-div img {
@@ -354,6 +356,12 @@ span {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
+
+    .zoom-image{
+        display: flex;
+        justify-content: center;
+    }
+
   
     .aboutme-info {
         padding: 2rem;
@@ -373,6 +381,102 @@ span {
         gap: 2rem;
     }
 }
+
+@media (max-width: 600px) {
+    html {
+        font-size: 40%;
+        box-sizing: border-box;
+    }
+
+    .header-main {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        
+    }
+
+    #div-h1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navmenu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+
+    .text-div h2 {
+        font-size: 2.5rem;
+    }
+
+    .animation-text {
+        font-size: 2rem;
+    }
+
+    .about h3 {
+        font-size: 0.5rem;
+    }
+
+    .about-article {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .aboutme-info {
+        padding: 2rem;
+    font-size: 0.5rem;
+    }
+
+    .zoom-image{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .zoom-image img {
+        width: 30%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .div-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .left-side textarea {
+        width: 60%;
+    }
+
+    .right-side {
+        font-size: 1.8rem;
+        align-items: flex-start;
+    }
+
+    #myemail::before,
+    #myphone::before {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+    }
+
+    footer div {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
+    
+
     
 
   

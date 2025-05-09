@@ -7,7 +7,7 @@
 
 .project-card {
   display: flex;
-  gap: 2rem;
+  gap: 10rem;
   align-items: flex-start;
   background-color: rgb(245, 249, 250);
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -24,7 +24,7 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 .project-card .project-title {
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   color: rgb(76, 76, 243);
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -33,18 +33,20 @@
 }
 .project-card .project-text {
   flex: 1;
+  align-self: center;
 }
 .project-card .project-image {
   flex: 1;
+  align-self: center;
 }
 .project-card .project-image img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 1.2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .project-card .project-description {
-  font-size: 1rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 .project-card .project-info {
@@ -52,29 +54,50 @@
 }
 .project-card .project-info li {
   padding-bottom: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  #project {
-    margin: 1rem;
-  }
+@media (max-width: 800px) {
   .project-card {
     flex-direction: column;
-    max-width: 100%;
+    gap: 2rem;
+    max-width: 80%;
     padding: 1rem;
   }
-  .project-title {
+  .project-card .project-title {
+    font-size: 2rem;
+  }
+  .project-card .project-description {
+    font-size: 1.6rem;
+  }
+  .project-card .project-info li {
     font-size: 1.2rem;
   }
-  .project-description {
-    font-size: 0.9rem;
+  .project-card .project-image {
+    display: flex;
+    justify-content: center;
   }
-  .project-info li {
-    font-size: 0.8rem;
+  .project-card .project-image img {
+    width: 30%;
   }
-  .project-image img {
-    width: 100%;
-    height: auto;
+}
+@media (max-width: 600px) {
+  .project-card {
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 80%;
+    padding: 1rem;
+  }
+  .project-card .project-title {
+    font-size: 2rem;
+  }
+  .project-card .project-description {
+    font-size: 1.6rem;
+  }
+  .project-card .project-info li {
+    font-size: 1.2rem;
+  }
+  .project-card .project-image img {
+    width: 30%;
   }
 }/*# sourceMappingURL=project-card.css.map */

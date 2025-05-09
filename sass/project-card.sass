@@ -13,7 +13,7 @@ $fonts: "Figtree", sans-serif
 
 .project-card
   display: flex
-  gap: 2rem
+  gap: 10rem
   align-items: flex-start
   background-color: $background-color
   border: 1px solid rgba(0, 0, 0, 0.08)
@@ -30,7 +30,7 @@ $fonts: "Figtree", sans-serif
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.30)
 
   .project-title
-    font-size: 1.4rem
+    font-size: 2.5rem
     color: $primary-color
     text-align: center
     border-bottom: 1px solid rgba(0, 0, 0, 0.1)
@@ -40,18 +40,20 @@ $fonts: "Figtree", sans-serif
 
   .project-text
     flex: 1
+    align-self: center
 
   .project-image
     flex: 1
+    align-self: center
     img
-      width: 100%
+      width: 80%
       height: auto
       border-radius: $border-radius
       box-shadow: $shadow
     
 
   .project-description
-    font-size: 1rem
+    font-size: 2rem
     padding-bottom: 1rem
 
   .project-info
@@ -60,35 +62,55 @@ $fonts: "Figtree", sans-serif
 
     li
       padding-bottom: 0.5rem
-      font-size: 0.8rem
+      font-size: 1.5rem
 
 
-@media (max-width: 768px) 
-  #project 
-    margin: 1rem
-  
-
+@media (max-width: 800px)
   .project-card 
     flex-direction: column
-    max-width: 100%
+    gap: 2rem
+    max-width: 80%
     padding: 1rem
-  
 
-  .project-title 
-    font-size: 1.2rem
-  
+    .project-title
+      font-size: 2rem
 
-  .project-description 
-    font-size: 0.9rem
-  
+    .project-description
+      font-size: 1.6rem
 
-  .project-info li 
-    font-size: 0.8rem
-  
+    .project-info li
+      font-size: 1.2rem
 
-  .project-image img 
-    width: 100%
-    height: auto
+    .project-image
+      display: flex
+      justify-content: center
+
+    .project-image img
+      width: 30%
+
+
+
+@media (max-width: 600px)
+  .project-card 
+    flex-direction: column
+    gap: 2rem
+    max-width: 80%
+    padding: 1rem
+
+    .project-title
+      font-size: 2rem
+
+    .project-description
+      font-size: 1.6rem
+
+    .project-info li
+      font-size: 1.2rem
+
+
+    .project-image img
+      width: 30%
+      
+  
   
 
   
